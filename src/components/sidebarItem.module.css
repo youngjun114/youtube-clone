@@ -1,0 +1,37 @@
+.sidebarRow {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  width: 100%;
+  padding: 0px 16px;
+  min-width: 0;
+}
+
+.sidebarButton {
+  background-color: transparent;
+  color: #909090;
+  border: none;
+  cursor: unset;
+}
+
+.sidebarTitle {
+  flex: 1;
+  margin-left: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+  background-color: transparent;
+}
+
+.sidebarRow:hover {
+  background-color: hsla(0, 0%, 100%, 0.08);
+  cursor: pointer;
+}
+
+.sidebarRow:hover > .sidebarButton {
+  color: white;
+}
+
+.sidebarRow:hover > .sidebarTitle {
+  font-weight: bold;
+}

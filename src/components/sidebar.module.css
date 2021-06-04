@@ -1,11 +1,11 @@
-.menuContainer {
+.sideBar {
   display: flex;
   flex-direction: column;
-  position: fixed;
-  width: 72px;
+  width: 240px;
   height: 100vh;
   transition: 850ms;
-
+  overflow: auto;
+  padding: 12px 0;
   /* left: -100%; */
 }
 
@@ -38,8 +38,4 @@
   align-items: center;
   border: none;
   cursor: pointer;
-}
-
-.menuButton:hover {
-  background-color: hsla(0, 0%, 100%, 0.08);
 }

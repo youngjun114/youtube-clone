@@ -15,9 +15,7 @@ function Header() {
     <div className={styles.header}>
       <div className={styles.headerLeft}>
         <MenuIcon />
-        <a href='http://youtube.com'>
-          <img className={styles.headerLogo} src={logo} alt='logo' />
-        </a>
+        <img className={styles.headerLogo} src={logo} alt='logo' />
       </div>
       <Search />
       <div className={styles.headerRight}>
