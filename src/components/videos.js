@@ -3,8 +3,10 @@ import styles from '../components/videos.module.css';
 
 function Videos() {
   return (
-    <div>
-      <h2>Video contents have to come here</h2>
+    <div className={styles.videoContainer}>
+      <h2>
+        Video contents have to come here aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+      </h2>
     </div>
   );
 }

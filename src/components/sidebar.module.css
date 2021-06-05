@@ -4,28 +4,8 @@
   width: 240px;
   height: 100vh;
   transition: 850ms;
-  overflow: auto;
-  transition: 850ms;
-  left: -100%;
-}
-
-.sideBarContainer {
-  padding: 12px 0;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.sideBarContainer:first-child {
-  border-top: none;
-}
-
-.sideBarContainer h3 {
-  font-size: 14px;
-  display: block;
-  height: 40px;
-  width: 100%;
-  padding: 8px 16px;
-  min-width: 0;
-  color: #aaa;
+  border: 1px solid white;
+  overflow-y: auto;
 }
 
 .sideBar.active {
@@ -57,44 +37,6 @@
   align-items: center;
   border: none;
   cursor: pointer;
-}
-
-.sidebarRow {
-  display: flex;
-  align-items: center;
-  height: 40px;
-  width: 100%;
-  padding: 0px 16px;
-  min-width: 0;
-}
-
-.sidebarButton {
-  color: #909090;
-  border: none;
-  cursor: unset;
-  background: none;
-}
-
-.sidebarTitle {
-  flex: 1;
-  margin-left: 20px;
-  font-size: 14px;
-  font-weight: 500;
-  color: white;
-  background-color: transparent;
-}
-
-.sidebarRow:hover {
-  background-color: hsla(0, 0%, 100%, 0.08);
-  cursor: pointer;
-}
-
-.sidebarRow:hover > .sidebarButton {
-  color: white;
-}
-
-.sidebarRow:hover > .sidebarTitle {
-  font-weight: bold;
 }
 
 .sidebarGuide {

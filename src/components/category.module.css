@@ -1,0 +1,6 @@
+.categoryContainer {
+  display: flex;
+  align-items: center;
+  height: 56px;
+  border: 1px solid white;
+}

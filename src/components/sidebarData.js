@@ -11,13 +11,13 @@ import MovieIcon from '@material-ui/icons/Theaters';
 import NewsIcon from '@material-ui/icons/EventNote';
 import LiveIcon from '@material-ui/icons/LiveTv';
 import LearningIcon from '@material-ui/icons/EmojiObjects';
-import { GiHanger as FashionIcon } from 'react-icons/gi';
+import FashionIcon from '@material-ui/icons/Watch';
 import YouTubeIcon from '@material-ui/icons/YouTube';
 import SettingsIcon from '@material-ui/icons/Settings';
 import FlagIcon from '@material-ui/icons/Flag';
 import HelpIcon from '@material-ui/icons/Help';
 import FeedbackIcon from '@material-ui/icons/Feedback';
-import VirtualRealityIcon from '@material-ui/icons/ThreeDRotation';
+import VirtualRealityIcon from '@material-ui/icons/ThreeSixty';
 
 export const sidebarHome = [
   {
