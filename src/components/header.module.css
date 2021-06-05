@@ -19,11 +19,14 @@
 .headerLeft {
   display: flex;
   align-items: center;
-  box-sizing: border-box;
   height: 100%;
   color: white;
-  padding: 5px;
   flex-shrink: 0;
+}
+
+.headerLeft a {
+  display: flex;
+  align-items: center;
 }
 
 .headerRight {
