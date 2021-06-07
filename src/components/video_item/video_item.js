@@ -1,8 +1,8 @@
 import React from 'react';
-import './videos.css';
-import { youtubeVideo } from '../data/videoData';
+import '../video_list/video_list.css';
+import { youtubeVideo } from '../../data/videoData';
 
-function Video() {
+function VideoItem() {
   return (
     <article className='video-container'>
       <a href={youtubeVideo.url} className='thumbnail'>
@@ -37,4 +37,4 @@ function Video() {
   );
 }
 
-export default Video;
+export default VideoItem;

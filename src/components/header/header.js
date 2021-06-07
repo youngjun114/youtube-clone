@@ -3,8 +3,8 @@ import React, { useState } from 'react';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import './header.css';
-import logo from '../logo.png';
-import Search from './search';
+import logo from '../../logo.png';
+import Search from '../search/search';
 import { Link } from 'react-router-dom';
 
 import MenuIcon from '@material-ui/icons/Menu';

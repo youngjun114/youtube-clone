@@ -1,5 +1,5 @@
 import React from 'react';
-import './sidebarList.css';
+import './sidebar_list.css';
 import { Link } from 'react-router-dom';
 
 function SidebarList({ list, label, show }) {

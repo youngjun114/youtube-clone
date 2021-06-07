@@ -1,5 +1,5 @@
 import React from 'react';
-import './sidebar.css';
+import '../sidebar/sidebar.css';
 import {
   sidebarHome,
   sidebarLibrary,
@@ -7,8 +7,8 @@ import {
   moreFromYoutube,
   sidebarSettings,
   compactSidebar,
-} from '../data/sidebarData';
-import SidebarList from './sidebarList';
+} from '../../data/sidebarData';
+import SidebarList from '../sidebar_list/sidebar_list';
 
 const Sidebar = ({ show }) => {
   if (!show) {
