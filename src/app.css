@@ -1,12 +1,17 @@
+* {
+  margin: 0;
+}
 .app {
   display: flex;
   flex-direction: column;
-  overflow-y: auto;
+  width: 100%;
+  flex-wrap: wrap;
 }
 
-.app_page {
+.main {
   display: flex;
-  flex-direction: column;
+  height: 100vh;
+  width: 100%;
 }
 
 ::-webkit-scrollbar {

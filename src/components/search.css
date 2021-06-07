@@ -1,5 +1,6 @@
 .formContainer {
   display: flex;
+
   align-items: center;
   width: 45%;
   max-width: 650px;
@@ -20,6 +21,7 @@
   border-right: none;
   box-shadow: none;
   line-height: 32px;
+  min-width: 100px;
   width: 100%;
   text-rendering: auto;
   letter-spacing: normal;

@@ -1,8 +1,8 @@
 /* eslint-disable */
 import React, { useState } from 'react';
-import styles from './search.module.css';
 import SearchIcon from '@material-ui/icons/Search';
 import MicIcon from '@material-ui/icons/Mic';
+import './search.css';
 
 const Search = ({ onSubmit }) => {
   const [searchResult, setSearchResult] = useState('');
@@ -19,20 +19,16 @@ const Search = ({ onSubmit }) => {
 
   return (
     <>
-      <form
-        ref={formRef}
-        className={styles.formContainer}
-        onSubmit={handleSubmit}
-      >
+      <form ref={formRef} className='formContainer' onSubmit={handleSubmit}>
         <input
-          className={styles.input}
+          className='input'
           ref={inputRef}
           type='text'
           placeholder='Search'
         />
-        <div className={styles.buttonContainer}>
-          <SearchIcon className={styles.searchButton} />
-          <MicIcon className={styles.micIcon} />
+        <div className='buttonContainer'>
+          <SearchIcon className='searchButton' />
+          <MicIcon className='micIcon' />
         </div>
       </form>
     </>

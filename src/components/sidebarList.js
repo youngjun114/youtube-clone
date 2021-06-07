@@ -1,23 +1,29 @@
 import React from 'react';
-import styles from './sidebarList.module.css';
+import './sidebarList.css';
 import { Link } from 'react-router-dom';
 
-function SidebarList({ list, label }) {
+function SidebarList({ list, label, show }) {
   const isLabel = () => {
     if (label) {
       return <h3>{label}</h3>;
     }
   };
+
   return (
-    <ul className={styles.sideBarContainer}>
+    <ul className={show ? 'sideBarContainer' : 'sideBarContainer active'}>
       {isLabel()}
       {list.map((item, index) => {
         return (
-          <li key={index} className={styles.sidebarRow}>
-            <Link to={item.path} className={styles.sidebarButton}>
+          <li key={index} className={show ? 'sidebarRow' : 'sidebarRow active'}>
+            <Link
+              to={item.path}
+              className={show ? 'sidebarButton' : 'sidebarButton active'}
+            >
               {item.icon}
             </Link>
-            <span className={styles.sidebarTitle}>{item.title}</span>
+            <span className={show ? 'sidebarTitle' : 'sidebarTitle active'}>
+              {item.title}
+            </span>
           </li>
         );
       })}

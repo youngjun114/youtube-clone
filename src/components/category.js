@@ -1,10 +1,10 @@
 import React from 'react';
-import styles from './category.module.css';
+import './category.css';
 
 function Category() {
   return (
-    <div className={styles.categoryContainer}>
-      <h2>this is Category section</h2>
+    <div className='categoryContainer'>
+      <h2>Category</h2>
     </div>
   );
 }

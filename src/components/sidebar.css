@@ -1,0 +1,11 @@
+.sideBar {
+  display: flex;
+  flex-direction: column;
+  width: 240px;
+
+  overflow-y: auto;
+}
+
+.sideBar.active {
+  width: 72px;
+}

@@ -3,6 +3,9 @@
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+.sideBarContainer.active {
+  padding: 0;
+}
 .sideBarContainer:first-child {
   border-top: none;
 }
@@ -22,24 +25,44 @@
   align-items: center;
   height: 40px;
   width: 100%;
-  padding: 0px 16px;
-  min-width: 0;
+  padding: 0px 24px;
+}
+
+.sidebarRow.active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 72px;
+  height: 74px;
+  width: 100%;
+  padding: 0;
 }
 
 .sidebarButton {
   color: #909090;
   border: none;
-  cursor: unset;
   background: none;
+  min-width: 24px;
+  padding-bottom: 6px;
 }
 
 .sidebarTitle {
-  flex: 1;
   margin-left: 20px;
   font-size: 14px;
   font-weight: 500;
   color: white;
   background-color: transparent;
+  width: 100%;
+}
+
+.sidebarTitle.active {
+  text-align: center;
+  margin: 0;
+  font-size: 10px;
+  line-height: 14px;
+  white-space: nowrap;
+  font-weight: 400;
 }
 
 .sidebarRow:hover {

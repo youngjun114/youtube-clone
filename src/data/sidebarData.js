@@ -1,4 +1,3 @@
-import React from 'react';
 import HomeIcon from '@material-ui/icons/Home';
 import ExploreIcon from '@material-ui/icons/Explore';
 import SubscriptionsIcon from '@material-ui/icons/Subscriptions';
@@ -19,20 +18,58 @@ import HelpIcon from '@material-ui/icons/Help';
 import FeedbackIcon from '@material-ui/icons/Feedback';
 import VirtualRealityIcon from '@material-ui/icons/ThreeSixty';
 
-export const sidebarHome = [
+const iconSize = {
+  backgroundColor: 'transparent',
+  fontSize: '24px',
+};
+
+export const compactSidebar = [
   {
     title: 'Home',
-    icon: <HomeIcon style={{ backgroundColor: 'transparent' }} />,
+    icon: <HomeIcon style={iconSize} />,
     path: '/',
   },
   {
     title: 'Explore',
-    icon: <ExploreIcon style={{ backgroundColor: 'transparent' }} />,
+    icon: <ExploreIcon style={iconSize} />,
     path: '/explore',
   },
   {
     title: 'Subscriptions',
-    icon: <SubscriptionsIcon style={{ backgroundColor: 'transparent' }} />,
+    icon: <SubscriptionsIcon style={iconSize} />,
+    path: '/subscriptions',
+  },
+  {
+    title: 'Originals',
+    icon: <YouTubeIcon style={iconSize} />,
+    path: '/originals',
+  },
+  {
+    title: 'Music',
+    icon: <MusicIcon style={iconSize} />,
+    path: '/music',
+  },
+  {
+    title: 'Library',
+    icon: <VideoLibraryIcon style={iconSize} />,
+    path: '/library',
+  },
+];
+
+export const sidebarHome = [
+  {
+    title: 'Home',
+    icon: <HomeIcon style={iconSize} />,
+    path: '/',
+  },
+  {
+    title: 'Explore',
+    icon: <ExploreIcon style={iconSize} />,
+    path: '/explore',
+  },
+  {
+    title: 'Subscriptions',
+    icon: <SubscriptionsIcon style={iconSize} />,
     path: '/subscriptions',
   },
 ];
@@ -40,12 +77,12 @@ export const sidebarHome = [
 export const sidebarLibrary = [
   {
     title: 'Library',
-    icon: <VideoLibraryIcon style={{ backgroundColor: 'transparent' }} />,
+    icon: <VideoLibraryIcon style={iconSize} />,
     path: '/library',
   },
   {
     title: 'History',
-    icon: <HistoryIcon style={{ backgroundColor: 'transparent' }} />,
+    icon: <HistoryIcon style={iconSize} />,
     path: '/history',
   },
 ];
@@ -53,52 +90,52 @@ export const sidebarLibrary = [
 export const bestOfYoutube = [
   {
     title: 'Music',
-    icon: <MusicIcon style={{ backgroundColor: 'transparent' }} />,
+    icon: <MusicIcon style={iconSize} />,
     path: '/music',
   },
   {
     title: 'Sports',
-    icon: <SportsIcon style={{ backgroundColor: 'transparent' }} />,
+    icon: <SportsIcon style={iconSize} />,
     path: '/sports',
   },
   {
     title: 'Gaming',
-    icon: <GamingIcon style={{ backgroundColor: 'transparent' }} />,
+    icon: <GamingIcon style={iconSize} />,
     path: '/gaming',
   },
   {
     title: 'Movies & Shows',
-    icon: <MovieIcon style={{ backgroundColor: 'transparent' }} />,
+    icon: <MovieIcon style={iconSize} />,
     path: '/movies&shows',
   },
   {
     title: 'News',
-    icon: <NewsIcon style={{ backgroundColor: 'transparent' }} />,
+    icon: <NewsIcon style={iconSize} />,
     path: '/news',
   },
   {
     title: 'Live',
-    icon: <LiveIcon style={{ backgroundColor: 'transparent' }} />,
+    icon: <LiveIcon style={iconSize} />,
     path: '/live',
   },
   {
     title: 'Fashion & Beauty',
-    icon: <FashionIcon style={{ backgroundColor: 'transparent' }} />,
+    icon: <FashionIcon style={iconSize} />,
     path: '/fashion&beauty',
   },
   {
     title: 'Learning',
-    icon: <LearningIcon style={{ backgroundColor: 'transparent' }} />,
+    icon: <LearningIcon style={iconSize} />,
     path: '/learning',
   },
   {
     title: 'Spotlight',
-    icon: <YouTubeIcon style={{ backgroundColor: 'transparent' }} />,
+    icon: <YouTubeIcon style={iconSize} />,
     path: '/spotlight',
   },
   {
     title: '360° Video',
-    icon: <VirtualRealityIcon style={{ backgroundColor: 'transparent' }} />,
+    icon: <VirtualRealityIcon style={iconSize} />,
     path: '/virtualreality',
   },
 ];
@@ -106,12 +143,12 @@ export const bestOfYoutube = [
 export const moreFromYoutube = [
   {
     title: 'Youtube Premium',
-    icon: <YouTubeIcon style={{ backgroundColor: 'transparent' }} />,
+    icon: <YouTubeIcon style={iconSize} />,
     path: '/premium',
   },
   {
     title: 'Live',
-    icon: <LiveIcon style={{ backgroundColor: 'transparent' }} />,
+    icon: <LiveIcon style={iconSize} />,
     path: '/live',
   },
 ];
@@ -119,22 +156,22 @@ export const moreFromYoutube = [
 export const sidebarSettings = [
   {
     title: 'Settings',
-    icon: <SettingsIcon style={{ backgroundColor: 'transparent' }} />,
+    icon: <SettingsIcon style={iconSize} />,
     path: '/settings',
   },
   {
     title: 'Report history',
-    icon: <FlagIcon style={{ backgroundColor: 'transparent' }} />,
+    icon: <FlagIcon style={iconSize} />,
     path: '/report',
   },
   {
     title: 'Help',
-    icon: <HelpIcon style={{ backgroundColor: 'transparent' }} />,
+    icon: <HelpIcon style={iconSize} />,
     path: '/help',
   },
   {
     title: 'Send feedback',
-    icon: <FeedbackIcon style={{ backgroundColor: 'transparent' }} />,
+    icon: <FeedbackIcon style={iconSize} />,
     path: '/feedback',
   },
 ];

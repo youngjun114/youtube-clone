@@ -1,12 +1,43 @@
 import React from 'react';
-import styles from '../components/videos.module.css';
+import './videos.css';
+
+import Video from './video';
 
 function Videos() {
   return (
-    <div className={styles.videoContainer}>
-      <h2>
-        Video contents have to come here aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-      </h2>
+    <div className='contentContainer'>
+      <section className='video-section'>
+        <Video />
+        <Video />
+        <Video />
+        <Video />
+        <Video />
+        <Video />
+        <Video />
+        <Video />
+        <Video />
+        <Video />
+        <Video />
+        <Video />
+        <Video />
+        <Video />
+        <Video />
+        <Video />
+        <Video />
+        <Video />
+        <Video />
+        <Video />
+        <Video />
+        <Video />
+        <Video />
+        <Video />
+        <Video />
+        <Video />
+        <Video />
+        <Video />
+        <Video />
+        <Video />
+      </section>
     </div>
   );
 }

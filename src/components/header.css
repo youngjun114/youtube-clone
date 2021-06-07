@@ -1,13 +1,11 @@
-* {
-  margin: 0;
-}
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 56px;
-  padding: 0 16px;
-  border: 1px solid white;
+  padding: 0 24px;
+  z-index: 12;
+  width: 100%;
 }
 
 .headerLogo {
@@ -18,6 +16,7 @@
 
 .headerLeft {
   display: flex;
+
   align-items: center;
   height: 100%;
   color: white;
@@ -34,7 +33,6 @@
   justify-content: space-evenly;
   align-items: center;
   height: 100%;
-  padding: 0 16px;
   min-width: 225px;
   color: white;
   cursor: pointer;
