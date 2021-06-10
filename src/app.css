@@ -11,7 +11,14 @@
 .main {
   display: flex;
   height: 100vh;
+}
+
+.content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
   width: 100%;
+  align-items: center;
 }
 
 ::-webkit-scrollbar {

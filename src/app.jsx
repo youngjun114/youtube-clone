@@ -5,50 +5,56 @@ import React, { useEffect, useState } from 'react';
 import Header from './components/header/header';
 import Sidebar from './components/sidebar/sidebar';
 import VideoList from './components/video_list/video_list';
+import SearchList from './components/search_list/search_list';
 import Category from './components/category/category';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import History from './components/history/history';
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  useHistory,
+} from 'react-router-dom';
 
-require('dotenv').config();
-const api_key = process.env.API_KEY;
-
-function App() {
-  const [showMenu, setShowMenu] = useState(false);
+function App({ youtube }) {
+  const [showMenu, setShowMenu] = useState(true);
   const [videos, setVideos] = useState([]);
+  const [query, setQuery] = useState('');
+
+  const search = useCallback((query) => {
+    youtube
+      .search(query) //
+      .then(setQuery(query))
+      .then((videos) => setVideos(videos));
+  }, []);
+
+  useEffect(() => {
+    youtube
+      .mostPopular() //
+      .then((videos) => setVideos(videos));
+  }, [youtube]);
+
   const handleShowMenu = () => {
     setShowMenu(!showMenu);
   };
 
-  useEffect(() => {
-    const requestOptions = {
-      method: 'GET',
-      redirect: 'follow',
-    };
-
-    fetch(
-      `https://youtube.googleapis.com/youtube/v3/videos?part=snippet&chart=mostPopular&maxResults=12&key=${api_key}`,
-      requestOptions
-    )
-      .then((response) => response.json())
-      .then((result) => {
-        setVideos(result.items);
-        console.log(result);
-      })
-      .catch((error) => console.log('error', error));
-  }, []);
-
   return (
-    <div className='app'>
-      <Router>
-        <Header show={showMenu} onToggle={handleShowMenu} />
+    <Router history={History}>
+      <div className='app'>
+        <Header show={showMenu} onToggle={handleShowMenu} onSearch={search} />
         <div className='main'>
-          <Sidebar show={showMenu} onToggle={handleShowMenu} />
+          <Sidebar show={showMenu} />
           <Switch>
-            <Route path='/' />
+            <Route
+              exact
+              path='/'
+              render={() => <VideoList videos={videos} />}
+            />
+
+            <Route path='/search' render={() => <SearchList />} />
           </Switch>
-          <VideoList videos={videos} />
         </div>
-      </Router>
-    </div>
+      </div>
+    </Router>
   );
 }
 

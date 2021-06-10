@@ -1,9 +1,9 @@
 import React from 'react';
-import './category.css';
+import styles from './category.module.css';
 
 function Category() {
   return (
-    <div className='categoryContainer'>
+    <div className={styles.categoryContainer}>
       <h2>Category</h2>
     </div>
   );

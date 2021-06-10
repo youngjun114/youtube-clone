@@ -1,0 +1,13 @@
+.content_container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.list_container {
+  display: block;
+  max-width: 855px;
+  min-width: auto;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 40px;
+}

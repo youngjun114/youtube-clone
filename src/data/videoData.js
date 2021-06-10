@@ -9,4 +9,6 @@ export const youtubeVideo = {
   footer: '658,007 views•Nov 12, 2020',
   channelName: 'John K',
   channelUrl: 'https://www.youtube.com/channel/UCfcuj5fOkdBhosiEwBuP78A',
+  description:
+    'Lyrics: Vibing We could talk all night or sit in silence Watching shitty movies Getting high and laughing about nothing much at all ...',
 };

@@ -1,16 +1,16 @@
-.sideBarContainer {
+.sidebar_container {
   padding: 12px 0;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.sideBarContainer.active {
+.sidebar_container_active {
   padding: 0;
 }
-.sideBarContainer:first-child {
+.sidebar_container:first-child {
   border-top: none;
 }
 
-.sideBarContainer h3 {
+.sidebar_container h3 {
   font-size: 14px;
   display: block;
   height: 40px;
@@ -20,7 +20,7 @@
   color: #aaa;
 }
 
-.sidebarRow {
+.sidebar_row {
   display: flex;
   align-items: center;
   height: 40px;
@@ -28,7 +28,7 @@
   padding: 0px 24px;
 }
 
-.sidebarRow.active {
+.sidebar_row_active {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -39,7 +39,7 @@
   padding: 0;
 }
 
-.sidebarButton {
+.sidebar_button {
   color: #909090;
   border: none;
   background: none;
@@ -47,7 +47,7 @@
   padding-bottom: 6px;
 }
 
-.sidebarTitle {
+.sidebar_title {
   margin-left: 20px;
   font-size: 14px;
   font-weight: 500;
@@ -56,7 +56,7 @@
   width: 100%;
 }
 
-.sidebarTitle.active {
+.sidebar_title_active {
   text-align: center;
   margin: 0;
   font-size: 10px;
@@ -65,15 +65,15 @@
   font-weight: 400;
 }
 
-.sidebarRow:hover {
+.sidebar_row:hover {
   background-color: hsla(0, 0%, 100%, 0.08);
   cursor: pointer;
 }
 
-.sidebarRow:hover > .sidebarButton {
+.sidebar_row:hover > .sidebar_button {
   color: white;
 }
 
-.sidebarRow:hover > .sidebarTitle {
+.sidebar_row:hover > .sidebar_title {
   font-weight: bold;
 }

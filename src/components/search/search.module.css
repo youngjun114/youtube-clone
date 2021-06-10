@@ -1,6 +1,5 @@
-.formContainer {
+.input_container {
   display: flex;
-
   align-items: center;
   width: 45%;
   max-width: 650px;
@@ -8,7 +7,7 @@
   box-shadow: inset 0 1px 2px hsla(0, 0%, 0%, 0);
 }
 
-.formContainer > input {
+.input_container > input {
   padding: 0;
   flex: 1;
   flex-shrink: 1;
@@ -31,15 +30,11 @@
   text-shadow: none;
 }
 
-.buttonContainer {
-  height: 34px;
+.search_button {
   display: flex;
+  justify-content: center;
   align-items: center;
-}
-
-.searchButton {
-  box-sizing: border-box;
-  height: 100% !important;
+  height: 34px !important;
   width: 65px !important;
   cursor: pointer;
   color: hsla(0, 100%, 100%, 0.5);
@@ -49,12 +44,13 @@
   flex-shrink: 0;
 }
 
-.searchIcon {
+.search_icon {
   color: hsla(0, 100%, 100%, 0.5);
+  background-color: transparent;
   opacity: 0.6;
 }
 
-.micIcon {
+.voice_icon {
   color: white;
   cursor: pointer;
   margin-left: 10px;

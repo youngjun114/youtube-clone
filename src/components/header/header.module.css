@@ -3,32 +3,34 @@
   justify-content: space-between;
   align-items: center;
   height: 56px;
-  padding: 0 24px;
+  padding: 0 18px;
   z-index: 12;
   width: 100%;
 }
 
-.headerLogo {
+.header_logo {
   height: 20px;
   object-fit: contain;
   padding-left: 16px;
 }
 
-.headerLeft {
+.header_left {
   display: flex;
-
   align-items: center;
   height: 100%;
   color: white;
   flex-shrink: 0;
+  position: relative;
 }
 
-.headerLeft a {
-  display: flex;
-  align-items: center;
+.header_left button {
+  border: none;
+  width: 100%;
+  cursor: pointer;
+  height: 100%;
 }
 
-.headerRight {
+.header_right {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
